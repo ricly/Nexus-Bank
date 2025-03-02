@@ -10,19 +10,19 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "American Express Bank – Financial Solutions for Your Life",
+  title: "Nexus Bank – Financial Solutions for Your Life",
   description:
-    "Discover seamless banking with American Express Bank. Manage your finances effortlessly, access tailored financial products, and experience exceptional service. Secure, reliable, and always there for you.",
-  metadataBase: new URL("https://americanexpressbank.com/"),
+    "Discover seamless banking with Nexus Bank. Manage your finances effortlessly, access tailored financial products, and experience exceptional service. Secure, reliable, and always there for you.",
+  metadataBase: new URL("https://nexus-bank-chi.vercel.app/"),
   authors: {
-    name: "American Express Bank",
+    name: "Nexus Bank",
   },
   openGraph: {
-    title: "American Express Bank",
+    title: "Nexus Bank",
     description:
       "Financial solutions tailored for you. Manage your money with ease.",
-    url: "https://americanexpressbank.com/",
-    siteName: "American Express Bank",
+    url: "https://nexus-bank-chi.vercel.app/",
+    siteName: "Nexus Bank",
     images: "/assets/amex-logo.jpeg",
     type: "website",
   },

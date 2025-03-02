@@ -1,5 +1,7 @@
+import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const testimonialsNew = [
   {
@@ -112,9 +114,12 @@ export function Testimonials() {
             <p className="text-gray-400 mb-6">
               Join over 500,000 satisfied customers worldwide
             </p>
-            <button className="px-6 py-3 rounded-full bg-[#4ade80] text-black hover:bg-[#22c55e] transition-colors">
-              Open Your Account Today
-            </button>
+            <Button
+              className="px-6 py-3 rounded-full bg-[#4ade80] text-black hover:bg-[#22c55e] transition-colors"
+              asChild
+            >
+              <Link href={"/dashboard"}>Open Your Account Today</Link>
+            </Button>
           </div>
         </div>
       </div>

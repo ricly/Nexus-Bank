@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { ClientLogos } from "./_components/client-logos";
 import { Features } from "./_components/features";
 import { Statistics } from "./_components/statistics";
@@ -20,14 +21,18 @@ export default function HomePage() {
               digital platform. Your money, your control, anywhere in the world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-emerald-400 text-zinc-950 hover:bg-emerald-500 h-12 px-6">
-                Open an Account
+              <Button
+                className="bg-emerald-400 text-zinc-950 hover:bg-emerald-500 h-12 px-6"
+                asChild
+              >
+                <Link href={"/dashboard"}>Open an Account</Link>
               </Button>
               <Button
                 variant="outline"
                 className="border-zinc-700 h-12 px-6 text-black"
+                asChild
               >
-                Explore Features
+                <Link href={"/dashboard"}>Explore Features</Link>
               </Button>
             </div>
           </div>
@@ -152,8 +157,11 @@ export default function HomePage() {
           <Features />
 
           <div className="mt-12 text-center">
-            <Button className="bg-emerald-400 text-zinc-950 hover:bg-emerald-500">
-              Get Started Now
+            <Button
+              className="bg-emerald-400 text-zinc-950 hover:bg-emerald-500"
+              asChild
+            >
+              <Link href={"/dashboard"}>Get Started Now</Link>
             </Button>
           </div>
         </div>
